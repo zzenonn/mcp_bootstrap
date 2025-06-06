@@ -1,0 +1,23 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "fastmcp"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-bootstrap"
+version = "0.1.0" 
+description = "A bootstrap template for creating MCP servers"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "MCP Authors", email = "mcp@example.com" }
+]
+dependencies = [
+  "fastmcp>=1.0.0",
+  "pydantic>=1.10.0"
+]
+
+[project.scripts]
+mcp-bootstrap = "mcp_server.core:main"
